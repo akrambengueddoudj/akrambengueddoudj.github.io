@@ -121,6 +121,9 @@
 .card-price {
     font-size: 3.5rem;
 }
+.txt-area-md {
+    height: 10rem !important;
+}
 /* Main page */
 .dna-picture {
     top: -73px;
@@ -134,4 +137,8 @@
 .ak-filters div:hover {
     background-color: var(--ak-primary);
     border: none;
+}
+.contact-img {
+    width: 30vw;
+    height: 30vw;
 }

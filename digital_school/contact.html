@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Digital School | formations</title>
+    <title>Digital School | Books</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -23,7 +23,7 @@
                       <a class="nav-link" href="#about-part">About</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Formations
                         </a>
                         <ul class="dropdown-menu">
@@ -54,7 +54,7 @@
                       <a class="nav-link" href="./index.html#team-part">Our Team</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="./contact.html">Contact Us</a>
+                      <a class="nav-link active" href="./contact.html">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -64,131 +64,56 @@
             <div class="d-flex align-items-center gap-2">
                 <button class="btn ak-btn-outline-primary" data-bs-toggle="modal" data-bs-target="#signinModal">Sign In</button>      
                 <button class="btn ak-btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">Create Account</button>     
-            </div> 
+            </div>
         </div>
     </nav>
 
     <div class="container-fluid d-flex flex-column gap-4 mt-2">
-        <div class="d-flex gap-3 overflow-auto ak-filters">
-            <div class="border ak-border-primary px-3 py-1 rounded-2" role="button">A-Z</div>
-            <div class="ak-bg-primary px-3 py-1 rounded-2" role="button">Module</div>
-            <div class="border ak-border-primary px-3 py-1 rounded-2" role="button">Teacher</div>
-        </div>
-        <div class="d-flex flex-column gap-3">
-            <h2 class="h2 m-0 fw-bold">Science</h2>
-            <div class="row gy-4" data-masonry='{"percentPosition": true }'>
-                <div class="col-4">
-                    <div class="card text-center ak-bg-secondary">
-                        <img src="./pictures/formation-placeholder.jpg" class="card-img-top" alt="formation">
-                        <div class="card-body text-start">
-                            <h5 class="card-title">Basics of Ecology</h5>
-                            <p class="card-text">Learn the foundational concepts of ecosystems, biodiversity, and environmental interactions.</p>
-                            <button class="btn ak-btn-warning d-flex align-items-center gap-2">
-                                <span>Start the course</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
-                                </svg>
-                            </button>
-                        </div>
+        <div class="d-flex justify-content-evenly mt-4">
+            <div class="d-flex flex-column gap-3">
+                <h2 class="h2 m-0 fw-bold">Contact Us</h2>
+                <div class="d-flex gap-3">
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+                        <label for="firstName">First Name</label>
                     </div>
+                    <div class="form-floating">
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+                        <label for="lastName">Last Name</label>
+                    </div>                      
                 </div>
-                <div class="col-4">
-                    <div class="card text-center ak-bg-secondary">
-                        <div class="card-body">
-                            <h5 class="card-title">Formation 7: Marine Biology</h5>
-                            <p class="card-text">Learn about life in oceans, seas, and the amazing organisms that inhabit them.</p>
-                        </div>
-                    </div>
+                <div class="form-floating">
+                    <input type="email" class="form-control" id="email" placeholder="Email address">
+                    <label for="email">Email address</label>
                 </div>
-                <div class="col-4">
-                    <div class="card text-center ak-bg-secondary">
-                        <img src="./pictures/formation-placeholder.jpg" class="card-img-top" alt="formation">
-                        <div class="card-body">
-                            <h5 class="card-title">Formation 8: Microbiology Basics</h5>
-                            <p class="card-text">Examine the microscopic organisms that influence life on Earth, from bacteria to viruses.</p>
-                        </div>
-                    </div>
+                <div class="form-floating">
+                    <input type="number" class="form-control" id="phoneNbr" placeholder="Phone Number">
+                    <label for="phoneNbr">Phone Number</label>
                 </div>
-                <div class="col-4">
-                    <div class="card text-center ak-bg-secondary">
-                        <img src="./pictures/formation-placeholder.jpg" class="card-img-top" alt="formation">
-                        <div class="card-body">
-                            <h5 class="card-title">Formation 9: Evolutionary Biology</h5>
-                            <p class="card-text">Trace the evolutionary history of life and understand the mechanisms of evolution.</p>
-                        </div>
-                    </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="address" placeholder="Address">
+                    <label for="address">Address</label>
                 </div>
-                <div class="col-4">
-                    <div class="card text-center ak-bg-secondary">
-                        <div class="card-body">
-                            <h5 class="card-title">Formation 10: Climate Change Science</h5>
-                            <p class="card-text">Explore the science behind climate change and its impact on ecosystems and life.</p>
-                        </div>
-                    </div>
+                <div class="form-floating">
+                    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                      <option value="1" selected>Reporting a problem</option>
+                      <option value="2">Ask for guide</option>
+                      <option value="3">Demand book or formation</option>
+                      <option value="3">Something else</option>
+                    </select>
+                    <label for="floatingSelect">Select the service</label>
                 </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                    <label for="subject">Subject</label>
+                </div>
+                <div class="form-floating">
+                    <textarea class="form-control txt-area-md" placeholder="Leave your message here" id="message"></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button class="btn ak-btn-primary fw-bold">Send the message</button>
             </div>
-            <h2 class="h2 m-0 mt-4 fw-bold">Science</h2>
-            <div class="row gy-4" data-masonry='{"percentPosition": true }'>
-                <div class="col-4">
-                    <div class="card text-center ak-bg-secondary">
-                        <img src="./pictures/formation-placeholder.jpg" class="card-img-top" alt="formation">
-                        <div class="card-body text-start">
-                            <h5 class="card-title">Basics of Ecology</h5>
-                            <p class="card-text">Learn the foundational concepts of ecosystems, biodiversity, and environmental interactions.</p>
-                            <button class="btn ak-btn-warning d-flex align-items-center gap-2">
-                                <span>Start the course</span>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                                    <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card text-center ak-bg-secondary">
-                        <img src="./pictures/formation-placeholder.jpg" class="card-img-top" alt="formation">
-                        <div class="card-body">
-                            <h5 class="card-title">Formation 3: Plant Physiology</h5>
-                            <p class="card-text">Understand how plants grow, develop, and adapt to their environment.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card text-center ak-bg-secondary">
-                        <div class="card-body">
-                            <h5 class="card-title">Formation 4: Environmental Chemistry</h5>
-                            <p class="card-text">Delve into the chemical processes and pollutants affecting our environment.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card text-center ak-bg-secondary">
-                        <img src="./pictures/formation-placeholder.jpg" class="card-img-top" alt="formation">
-                        <div class="card-body">
-                            <h5 class="card-title">Formation 5: Zoology Fundamentals</h5>
-                            <p class="card-text">Study the classification, behavior, and habitats of animals in this course.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card text-center ak-bg-secondary">
-                        <img src="./pictures/formation-placeholder.jpg" class="card-img-top" alt="formation">
-                        <div class="card-body">
-                            <h5 class="card-title">Formation 8: Microbiology Basics</h5>
-                            <p class="card-text">Examine the microscopic organisms that influence life on Earth, from bacteria to viruses.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card text-center ak-bg-secondary">
-                        <img src="./pictures/formation-placeholder.jpg" class="card-img-top" alt="formation">
-                        <div class="card-body">
-                            <h5 class="card-title">Formation 9: Evolutionary Biology</h5>
-                            <p class="card-text">Trace the evolutionary history of life and understand the mechanisms of evolution.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <img class="contact-img mt-5" src="./pictures/support.png" alt="contact us">
         </div>
         <footer class="row py-5 border-top">
             <div class="col-6 mb-3">
