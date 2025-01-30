@@ -124,6 +124,12 @@
 .txt-area-md {
     height: 10rem !important;
 }
+.pt-1px {
+    padding-top: 1px;
+}
+.pt-2px {
+    padding-top: 2px;
+}
 /* Main page */
 .dna-picture {
     top: -73px;
@@ -141,4 +147,30 @@
 .contact-img {
     width: 30vw;
     height: 30vw;
+}
+.formation-nav a {
+    color: unset;
+    text-decoration: unset;
+    text-indent: .5rem;
+    padding: 0 .5rem;
+}
+.formation-nav a:hover {
+    background-color: #56CFE175;
+    border-radius: 1rem;
+}
+.formation-nav a.active {
+    background-color: var(--ak-primary);
+    border-radius: 1rem;
+    padding-top: 1px;
+}
+.video-js {
+    height: 35rem;
+}
+.profile-pic {
+    width: 13rem;
+    height: 13rem;
+}
+.profile-nav {
+    width: 3rem;
+    height: 3rem;
 }
