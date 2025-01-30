@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "videojs-contrib-quality-levels": "^4.1.0"
+  }
+}
